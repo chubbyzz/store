@@ -1,7 +1,11 @@
-<div ng-controller="productCtrl">
-    <ul>
-        <li ng-repeat="product in products">
-          <p>1 {{ product.title }}</p>
-        </li>
-    </ul>
+<div ng-app="productApp">
+  <div class="row" ng-controller="listCtrl">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-lg-3" ng-repeat="product in list">
+        <img class="img-responsive img-rounded" ng-src="{{product.image.url}}"/>
+        <br>
+        <p>{{ product.title }} <span class="pull-right">{{ product.price }}</span></p>
+      </div>
+    </div>
+  </div>
 </div>

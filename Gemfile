@@ -8,7 +8,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rack-cors'
-gem 'carrierwave'
+gem 's3_direct_upload'
+gem 'will_paginate', '~> 3.0.6'
 #angular gems
 gem 'angular-rails'
 gem 'angular-ui-bootstrap-rails'

@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Product.delete_all
+Image.delete_all
+p = Product.new
+
+p.title = "SEIKO Sport Solar Black and Orange Dial Chronograph Men's Watch"
+p.price = 137.21
+
+i = Image.new
+
+i.url = 'https://s3-sa-east-1.amazonaws.com/dev-store-whatchs/watch.jpg'
+i.main = true
+
+p.images << i
+p.save

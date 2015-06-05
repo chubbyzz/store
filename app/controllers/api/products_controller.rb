@@ -1,6 +1,6 @@
 class Api::ProductsController < Api:: ApplicationController
-  def index
-    render json: Product.all
+  def page
+    render :json => Product.all, :include => :image
   end
 
   #admin

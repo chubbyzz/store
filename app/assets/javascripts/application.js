@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require angular
-//= require angular-ui-bootstrap
 //= require angular-resource
-//= require angularjs-file-upload
 //= require turbolinks
 //= require_tree .
