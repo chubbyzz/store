@@ -2,7 +2,7 @@
   <div class="row" ng-controller="listCtrl">
     <div class="col-lg-10 col-lg-offset-1">
       <div class="col-lg-3" ng-repeat="product in list">
-        <img class="img-responsive img-rounded" ng-src="{{product.image.url}}"/>
+        <img class="img-responsive img-rounded" ng-src="{{product.main_image[0].url}}"/>
         <br>
         <p>{{ product.title }} <span class="pull-right">{{ product.price }}</span></p>
       </div>

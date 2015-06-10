@@ -1,6 +1,7 @@
 class Api::ProductsController < Api:: ApplicationController
   def page
-    render :json => Product.all, :include => :image
+    @products = Product.all.includes(:main_image).paginate(page: params['page'])
+    render json: @products.as_json(include: :main_image)
   end
 
   #admin
